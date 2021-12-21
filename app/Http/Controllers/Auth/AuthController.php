@@ -1,19 +1,16 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-
-use Session;
-use Hash;
-
+  
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-
+use Session;
 use App\Models\User;
 use App\Models\Book;
 use App\Models\Photo;
 use App\Models\Tag;
-
+use Hash;
   
 class AuthController extends Controller
 {

@@ -42,3 +42,7 @@ Route::get('registration', [AuthController::class, 'registration'])->name('regis
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('login', [AuthController::class, 'index'])->name('login');
 Route::get('dashboard', [AuthController::class, 'dashboard']); 
+
+
+#Test
+#Route::get('login', [Controller::class, 'showbooks']);

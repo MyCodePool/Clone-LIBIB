@@ -33,10 +33,12 @@ class Controller extends BaseController
      *
      * @return \Illuminate\Http\Response
      */
+    /*
     public function create()
     {
         //
     }
+    */
 
     /**
      * Store a newly created resource in storage.
