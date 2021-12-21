@@ -33,3 +33,11 @@ Route::get('/books/price/{range}', [Controller::class, 'show_books_by_pricerange
 Route::get('/books/rate/{rate}', [Controller::class, 'show_books_by_rate'])->name('show_books_by_rate');
 Route::get('/books/author/{author}', [Controller::class, 'show_books_by_author'])->name('show_books_by_author');
 Route::get('/books/distributor/{distributor}', [Controller::class, 'show_books_by_distributor'])->name('show_books_by_distributor');
+
+# Register & Login
+Route::get('login', [AuthController::class, 'index'])->name('login');
+Route::post('post-login', [AuthController::class, 'postLogin'])->name('login.post'); 
+Route::get('registration', [AuthController::class, 'registration'])->name('register');
+Route::post('post-registration', [AuthController::class, 'postRegistration'])->name('register.post'); 
+Route::get('dashboard', [AuthController::class, 'dashboard']); 
+Route::get('logout', [AuthController::class, 'logout'])->name('logout');
