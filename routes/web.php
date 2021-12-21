@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Auth\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +23,7 @@ Route::get('/manage', [Controller::class, 'bookcreate']);
 
 
 # CRUD
-Route::resource('/bookpost', 'App\Http\Controllers\BooksController');
+Route::resource('/bookpost', 'App\Http\Controllers\Controller');
 Route::get('/manage/{id}', [Controller::class, 'bookupdate'])->name('bookupdate');
 Route::get('/delete/{id}', [Controller::class, 'bookdelete'])->name('bookdelete');
 
@@ -35,9 +36,9 @@ Route::get('/books/author/{author}', [Controller::class, 'show_books_by_author']
 Route::get('/books/distributor/{distributor}', [Controller::class, 'show_books_by_distributor'])->name('show_books_by_distributor');
 
 # Register & Login
-Route::get('login', [AuthController::class, 'index'])->name('login');
+Route::post('post-registration', [AuthController::class, 'postRegistration'])->name('register.post'); 
 Route::post('post-login', [AuthController::class, 'postLogin'])->name('login.post'); 
 Route::get('registration', [AuthController::class, 'registration'])->name('register');
-Route::post('post-registration', [AuthController::class, 'postRegistration'])->name('register.post'); 
-Route::get('dashboard', [AuthController::class, 'dashboard']); 
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+Route::get('login', [AuthController::class, 'index'])->name('login');
+Route::get('dashboard', [AuthController::class, 'dashboard']); 
