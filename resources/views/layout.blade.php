@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>MyLibrary</title>
+    <title>Blog - Kreative</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -47,17 +47,39 @@
     <header class="s-header s-header--blog">
         <div class="row">
 
+            <div class="s-header__logo">
+                <a href="{{ url('/books') }}">
+                    <img src="{{ asset('images/logo.svg') }}" alt="Homepage">
+                </a>
+            </div>
+
             <nav class="s-header__nav">
                 <ul>
-                    <li class="current"><a href="/">MyLibrary</a></li>
-                  
+                    <li class="current"><a href="{{ url('/books') }}">My Library</a></li>
+                    @guest
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('login') }}">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('register') }}">Register</a>
+                    </li>
+                    @else
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/manage') }}">Create</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/dashboard') }}">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('logout') }}">Logout</a>
+                        </li>
+                    @endguest
                 </ul>
             </nav>
 
             <a class="s-header__menu-toggle" href="#0" title="Menu">
                 <span class="s-header__menu-icon"></span>
             </a>
-          
 
         </div> <!-- end row -->
     </header> <!-- end s-header -->
