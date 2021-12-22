@@ -48,14 +48,14 @@
         <div class="row">
 
             <div class="s-header__logo">
-                <a href="{{ url('/books') }}">
+                <a href="{{ url('/') }}">
                     <img src="{{ asset('images/logo.svg') }}" alt="Homepage">
                 </a>
             </div>
 
             <nav class="s-header__nav">
                 <ul>
-                    <li class="current"><a href="{{ url('/books') }}">My Library</a></li>
+                    <li class="current"><a href="{{ url('/') }}">My Library</a></li>
                     @guest
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('login') }}">Login</a>
