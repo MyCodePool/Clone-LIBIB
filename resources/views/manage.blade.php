@@ -48,14 +48,14 @@
                             </div>
 
                             <div class="form-field">
-                                <input name="author" id="author" class="h-full-width h-remove-bottom" placeholder="{{ isset($book)?$book->author:'Autor'; }}" type="text">
+                                <input name="author" id="author" class="h-full-width h-remove-bottom" placeholder="{{ isset($book)?$book->author:'Autor'; }}" value="{{ isset($book)?$book->author:'Autor'; }}" type="text">
                             </div>
 
                             <div class="form-field">
-                                <input name="distributor" id="distributor" class="h-full-width h-remove-bottom" placeholder="{{ isset($book)?$book->distributor:'Verlag'; }}" type="text">
+                                <input name="distributor" id="distributor" class="h-full-width h-remove-bottom" placeholder="{{ isset($book)?$book->distributor:'Verlag'; }}" value="{{ isset($book)?$book->distributor:''; }}" type="text">
                             </div>
                             <div class="form-field">
-                                <input name="price" id="price" class="h-full-width h-remove-bottom" placeholder="{{ isset($book)?$book->price:'0.00'; }}" type="text">
+                                <input name="price" id="price" class="h-full-width h-remove-bottom" placeholder="{{ isset($book)?$book->price:'0.00'; }}" value="{{ isset($book)?$book->price:''; }}" type="text">
                             </div>
 
                             <div class="message form-field">
