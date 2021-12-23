@@ -56,6 +56,7 @@ class Controller extends BaseController
         $book->title = $request->title;
         $book->rate = $request->rate;
         $book->release_date = $request->release_date;
+        $book->price = $request->price;
         $book->summary = $request->summary;
         $book->author = $request->author;
         $book->distributor = $request->distributor;
@@ -112,6 +113,7 @@ class Controller extends BaseController
         $book->title = $request->title;
         $book->rate = $request->rate;
         $book->release_date = $request->release_date;
+        $book->price = $request->price;
         $book->summary = $request->summary;
         $book->author = $request->author;
         $book->distributor = $request->distributor;

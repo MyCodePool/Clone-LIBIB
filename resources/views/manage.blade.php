@@ -17,7 +17,6 @@
 
                     <h3>
                     {{ isset($book)?'Update Book':'Create New Book'; }}
-                    <!--<span>Your email address will not be published.</span>-->
                     </h3>
 
                     @if(isset($book))
@@ -35,7 +34,6 @@
                             </div>
 
                             <div class="form-field">
-                                <!--<input name="rate" id="rate" class="h-full-width h-remove-bottom" placeholder="Rate" value="{{ isset($book)?$book->rate:''; }}" type="text">-->
                                 <select id="rate" name="rate" >
                                     <option value="5" style="background-image:url({{ asset('images/icons/5star.png') }})">5 Sterne - SEHR GUT</option>
                                     <option value="4" style="background-image:url({{ asset('images/icons/4star.png') }})">4 Sterne - GUT</option>
@@ -50,11 +48,14 @@
                             </div>
 
                             <div class="form-field">
-                                <input name="author" id="author" class="h-full-width h-remove-bottom" placeholder="Autor" type="text">
+                                <input name="author" id="author" class="h-full-width h-remove-bottom" placeholder="{{ isset($book)?$book->author:'Autor'; }}" type="text">
                             </div>
 
                             <div class="form-field">
-                                <input name="distributor" id="distributor" class="h-full-width h-remove-bottom" placeholder="Verlag" type="text">
+                                <input name="distributor" id="distributor" class="h-full-width h-remove-bottom" placeholder="{{ isset($book)?$book->distributor:'Verlag'; }}" type="text">
+                            </div>
+                            <div class="form-field">
+                                <input name="price" id="price" class="h-full-width h-remove-bottom" placeholder="{{ isset($book)?$book->price:'0.00'; }}" type="text">
                             </div>
 
                             <div class="message form-field">
@@ -82,33 +83,3 @@
 
 @endsection
 
-
-<!--
-
-                    <form name="contactForm" id="contactForm" method="post" action="/bookpost" autocomplete="off">
-                        {{ csrf_field() }}
-                        <fieldset>
-
-
-                            <div class="form-field">
-                                <input name="title" id="title" class="h-full-width h-remove-bottom" placeholder="Title" value="" type="text">
-                            </div>
-
-                            <div class="form-field">
-                                <input name="rate" id="rate" class="h-full-width h-remove-bottom" placeholder="Rate" value="" type="text">
-                            </div>
-
-                            <div class="form-field">
-                                <input name="release_date" id="release_date" class="h-full-width h-remove-bottom" placeholder="Relase Date" value="" type="text">
-                            </div>
-
-                            <div class="message form-field">
-                                <textarea name="summary" id="summary" class="h-full-width h-remove-bottom" placeholder="Summary"></textarea>
-                            </div>
-
-                            <input name="submit" id="submit" class="btn btn--primary btn-wide btn--large h-full-width" value="Save Book" type="submit">
-
-                        </fieldset>
-                    </form>
-
--->

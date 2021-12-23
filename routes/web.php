@@ -21,7 +21,6 @@ use App\Http\Controllers\Auth\AuthController;
 Route::get('/', [Controller::class, 'showbooks']);
 Route::get('/manage', [Controller::class, 'bookcreate']);
 
-
 # CRUD
 Route::resource('/bookpost', 'App\Http\Controllers\Controller');
 Route::get('/manage/{id}', [Controller::class, 'bookupdate'])->name('bookupdate');
@@ -42,7 +41,3 @@ Route::get('registration', [AuthController::class, 'registration'])->name('regis
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('login', [AuthController::class, 'index'])->name('login');
 Route::get('dashboard', [AuthController::class, 'dashboard']); 
-
-
-#Test
-#Route::get('login', [Controller::class, 'showbooks']);
