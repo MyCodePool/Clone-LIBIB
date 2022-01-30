@@ -55,7 +55,6 @@
 ## About The Project
 
 ![](readme.gif)
-<img src="readme.gif">
 
 
 Whether you have 50 items or 5,000 items, your library is precious. With libib, managing your private library of books, movies, music & video games is a snap. Scan, search, enter an ISBN/UPC, or import items in bulk from a CSV file and libib automatically retrieves that item's cover art and all pertinent information. Post, discuss, and follow your friends and discover with libib! Create up to 100 different libraries!
