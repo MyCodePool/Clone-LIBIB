@@ -12,7 +12,7 @@
   <h3 align="center">Book Library</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A laravel application to manage your private books, movies, music & video games.
     <br />
     <br />
     <a href="https://github.com/MyCodePool/book_library/issues">Report Bug</a>
@@ -30,7 +30,7 @@
 ![](readme.gif)
 
 
-Whether you have 50 items or 5,000 items, your library is precious. With libib, managing your private library of books, movies, music & video games is a snap. Scan, search, enter an ISBN/UPC, or import items in bulk from a CSV file and libib automatically retrieves that item's cover art and all pertinent information. Post, discuss, and follow your friends and discover with libib! Create up to 100 different libraries!
+Whether you have 50 items or 5,000 items, your library is precious. With this app, managing your private library of books, movies, music & video games is a snap. Create or import items in bulk from a CSV file and this app automatically retrieves that item's cover art and all pertinent information. Post, discuss, and follow your friends and discover with libib! Create up to 100 different libraries!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -49,7 +49,7 @@ Whether you have 50 items or 5,000 items, your library is precious. With libib, 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Comin soonh
+Comin soon
 
 ### Prerequisites
 
