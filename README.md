@@ -6,7 +6,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/MyCodePool/book_library">
-    <img src="readme.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/MyCodePool/book_library/readme.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Book Library</h3>
@@ -15,8 +15,6 @@
     An awesome README template to jumpstart your projects!
     <br />
     <br />
-    <a href="https://github.com/MyCodePool/book_library">View Demo</a>
-    ·
     <a href="https://github.com/MyCodePool/book_library/issues">Report Bug</a>
     ·
     <a href="https://github.com/MyCodePool/book_library/issues">Request Feature</a>
@@ -56,7 +54,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![](https://github.com/MyCodePool/book_library/readme.gif)
+
+
 
 Whether you have 50 items or 5,000 items, your library is precious. With libib, managing your private library of books, movies, music & video games is a snap. Scan, search, enter an ISBN/UPC, or import items in bulk from a CSV file and libib automatically retrieves that item's cover art and all pertinent information. Post, discuss, and follow your friends and discover with libib! Create up to 100 different libraries!
 
