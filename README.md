@@ -49,7 +49,7 @@ Whether you have 50 items or 5,000 items, your library is precious. With this ap
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Comin soon
+Comin soon...
 
 ### Prerequisites
 
@@ -64,7 +64,7 @@ Things you need to use the software and how to install them.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/mycodepool/clone-libib
    ```
 2. Install NPM packages
    ```sh
